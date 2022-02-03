@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -59,16 +61,16 @@ a {
 
 		&:hover {
 			background-color: white;
-			color: #627478;
+			color: $grey;
 		}
 	}
 
 	&--grey {
-		color: #627478;
-		border: 3px solid #627478;
+		color: $grey;
+		border: 3px solid $grey;
 
 		&:hover {
-			background-color: #627478;;
+			background-color: $grey;;
 			color: white;
 		}
 	}
@@ -83,7 +85,7 @@ header {
 	width: 100%;
 	background: url("assets/seacost.jpg") no-repeat;
 	background-size: cover;
-	background-position-y: 60%;
+	background-position-y: 100%;
 	height: 761px;
 
 	.header-content {
@@ -102,7 +104,7 @@ header {
 			font-size: 50px;
 			letter-spacing: 0.5px;
 			line-height: 1;
-			color: #000000;
+			color: #000;
 			font-weight: 800;
 		}
 
@@ -118,7 +120,7 @@ header {
 			font-size: 25px;
 			letter-spacing: 0px;
 			line-height: 69px;
-			color: #000000;
+			color: #000;
 			font-weight: 800;
 			text-transform: uppercase;
 
@@ -188,7 +190,7 @@ header {
 article {
 	padding: 26px 115px 46px;
 
-	> div {
+	> div:not(.columns) {
 		margin-bottom: 36px;
 	}
 
