@@ -156,7 +156,6 @@ header .top-bar__submenu-item {
 }
 
 header .cta {
-  margin-right: 70px;
   align-self: flex-end;
   max-width: 490px;
   color: #fff;
@@ -188,7 +187,12 @@ article {
   padding: 26px 115px 46px;
 }
 
+article > div {
+  margin-bottom: 36px;
+}
+
 article h2 {
+  margin-bottom: 20px;
   font-size: 49px;
   letter-spacing: 0px;
   line-height: 86px;
@@ -233,6 +237,10 @@ article.grey-background {
   background-color: #f9f9f9;
 }
 
+article:last-child {
+  margin-bottom: 20px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -241,7 +249,7 @@ article.grey-background {
 }
 
 .gallery__item {
-  margin-bottom: 76px;
+  margin-bottom: 66px;
   cursor: pointer;
 }
 
@@ -318,7 +326,7 @@ article.grey-background {
 }
 
 footer {
-  padding: 30px 120px;
+  padding: 20px 115px;
   background-color: #536467;
 }
 
