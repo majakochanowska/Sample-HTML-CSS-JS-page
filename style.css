@@ -87,6 +87,12 @@ header {
   height: 761px;
 }
 
+@media (min-width: 1800px) {
+  header {
+    background-position-y: 70%;
+  }
+}
+
 header .header-content {
   display: flex;
   flex-direction: column;
@@ -140,6 +146,7 @@ header .top-bar__submenu {
   border-radius: 7px;
   filter: drop-shadow(0px 3px 3.5px rgba(0, 0, 0, 0.35));
   background-color: #dfdede;
+  z-index: 100;
 }
 
 header .top-bar__submenu--visible {
@@ -211,6 +218,7 @@ article p {
 
 article img {
   margin-top: 7px;
+  margin-bottom: 15px;
 }
 
 article .columns {
@@ -245,7 +253,13 @@ article:last-child {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 76px;
+  margin-top: 70px;
+}
+
+@media (max-width: 1210px) {
+  .gallery {
+    justify-content: space-evenly;
+  }
 }
 
 .gallery__item {
