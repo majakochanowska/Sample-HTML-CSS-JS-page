@@ -451,6 +451,7 @@ article:last-child {
 
 .gallery__lightbox-content img {
   max-width: 946px;
+  width: 80vw;
 }
 
 footer {
