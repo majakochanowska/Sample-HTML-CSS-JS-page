@@ -76,7 +76,7 @@ a {
 
 img.floated-left {
 	float: left;
-	margin-right: 25px;
+	margin-right: 37px;
 }
 
 header {
@@ -90,8 +90,8 @@ header {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 77px 120px;
-		height: 680px;
+		padding: 74px 115px;
+		height: 678px;
 	}
 
 	.top-bar {
@@ -100,8 +100,8 @@ header {
 
 		h1 {
 			font-size: 50px;
-			letter-spacing: 1px;
-			line-height: 75px;
+			letter-spacing: 0.5px;
+			line-height: 1;
 			color: #000000;
 			font-weight: 800;
 		}
@@ -114,7 +114,7 @@ header {
 
 		&__menu-item {
 			position: relative;
-			margin-left: 67px;
+			margin-left: 75px;
 			font-size: 25px;
 			letter-spacing: 0px;
 			line-height: 69px;
@@ -163,6 +163,7 @@ header {
 		color: #fff;
 
 		h2 {
+			margin-bottom: 10px;
 			font-size: 50px;
 			letter-spacing: 1px;
 			line-height: 55px;
@@ -174,6 +175,7 @@ header {
 			align-items: center;
 
 			p {
+				max-width: 270px;
 				margin-right: 10px;
 				font-size: 21px;
 				letter-spacing: 0px;
@@ -185,7 +187,7 @@ header {
 }
 
 article {
-	padding: 49px 120px;
+	padding: 26px 115px 46px;
 
 	h2 {
 		font-size: 49px;
@@ -198,10 +200,14 @@ article {
 	p {
 		margin-bottom: 15px;
 		font-size: 16px;
-		letter-spacing: 0px;
+		letter-spacing: 0.2px;
 		line-height: 28px;
 		color: #575756;
 		font-weight: 300;
+	}
+
+	img {
+		margin-top: 7px;
 	}
 
 	.columns {
@@ -209,7 +215,7 @@ article {
 		flex-direction: row;
 
 		div:not(:last-child) {
-			margin-right: 40px;
+			margin-right: 36px;
 		}
 
 		@media (max-width: 599px) {
