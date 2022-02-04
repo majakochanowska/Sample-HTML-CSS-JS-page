@@ -17,6 +17,10 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	vertical-align: baseline;
+
+	&:focus-visible {
+		outline: none;
+	}
 }
 
 * {
