@@ -18,23 +18,31 @@ const displayGalleryItem = () => {
 			lightboxImg.setAttribute( 'src', itemSrc );
 			lightboxImg.setAttribute( 'alt', itemAlt );
 			lightbox.removeAttribute( 'aria-hidden' );
-			close.removeAttribute( 'tabindex' );
-		} )
+
+			setTimeout( () => {
+				close.focus();
+			}, 301 )
+
+			const closeImage = () => {
+				lightbox.classList.remove( 'gallery__lightbox--visible' );
+				lightbox.setAttribute( 'aria-hidden', 'true' );
+				close.blur();
+	
+				setTimeout( () => {
+					item.setAttribute( 'tabindex', '-1' )
+					item.focus();
+				}, 301 )
+			}
+		
+			close.addEventListener( 'click', closeImage );
+		
+			document.addEventListener( 'keydown', ( event ) => {
+				if ( 'Escape' === event.key ) {
+					closeImage()
+				}
+			} );
+		} );
 	};
-
-	const closeImage = () => {
-		lightbox.classList.remove( 'gallery__lightbox--visible' );
-		lightbox.setAttribute( 'aria-hidden', 'true' );
-		close.setAttribute( 'tabindex', '-1' );		
-	}
-
-	close.addEventListener( 'click', closeImage );
-
-	document.addEventListener( 'keydown', ( event ) => {
-		if ( 'Escape' === event.key ) {
-			closeImage()
-		}
-	} );
 }
 
 /**
